@@ -1,13 +1,14 @@
 'use client'
-import ThemeToggle from './ThemeToggle'
+
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import ThemeToggle from './ThemeToggle'
 
 const links = [
   { href: '#about', label: 'About' },
   { href: '#work', label: 'Work' },
   { href: '#skills', label: 'Skills' },
-  { href: '/blog', label: 'Blog' },  // <-- This is correct
+  { href: '/blog', label: 'Blog' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -20,11 +21,14 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10"
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-3xl font-bold text-white tracking-tight">
-          salam.dev
+        <Link
+          href="/"
+          className="text-2xl md:text-3xl font-extrabold text-white tracking-tight hover:text-red-500 transition duration-300"
+        >
+          Salam Alta&apos;ey
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           {links.map((link) => (
             <Link
               key={link.label}
@@ -34,7 +38,7 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <ThemeToggle/>
+          <ThemeToggle />
         </div>
       </div>
     </motion.nav>
