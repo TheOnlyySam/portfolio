@@ -9,7 +9,7 @@ const About = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold mb-6 text-center"
+        className="text-4xl font-bold mb-8 text-center text-[var(--foreground)] dark:text-white"
       >
         About Me
       </motion.h2>
@@ -18,26 +18,20 @@ const About = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-gray-400 text-lg text-center max-w-2xl mx-auto mb-12"
+        className="text-gray-600 dark:text-gray-400 text-lg text-center max-w-2xl mx-auto leading-relaxed"
       >
-        Software Engineer, Product Manager, and Tech Founder with hands-on experience in building scalable products, leading teams, and designing secure infrastructure for businesses across multiple industries.
+        I am Salam Alta&apos;ey — Software Engineer, Tech Founder, and Project Manager passionate about building scalable products, optimizing backend systems, and crafting exceptional digital experiences.
+        Experienced in leading development teams, architecting infrastructure, and delivering business-driven solutions across various industries.
       </motion.p>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-sm text-gray-300"
+        className="text-gray-600 dark:text-gray-400 text-lg text-center max-w-2xl mx-auto mt-6 leading-relaxed"
       >
-        <span className="border border-gray-700 py-3 rounded-md">Next.js</span>
-        <span className="border border-gray-700 py-3 rounded-md">React</span>
-        <span className="border border-gray-700 py-3 rounded-md">.NET</span>
-        <span className="border border-gray-700 py-3 rounded-md">Go</span>
-        <span className="border border-gray-700 py-3 rounded-md">Python</span>
-        <span className="border border-gray-700 py-3 rounded-md">Odoo</span>
-        <span className="border border-gray-700 py-3 rounded-md">Cloud DevOps</span>
-        <span className="border border-gray-700 py-3 rounded-md">UI/UX Design</span>
-      </motion.div>
+        Currently working at Sanaya Al-Arabia, Metaspace Inc., and AXUX — delivering innovative technology solutions, managing products, and scaling infrastructure.
+      </motion.p>
     </section>
   )
 }

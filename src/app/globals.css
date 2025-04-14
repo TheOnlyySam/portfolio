@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Background Animation */
 @keyframes gradient {
   0%, 100% {
     background-position: 0% 50%;
@@ -14,6 +15,7 @@
   animation: gradient 15s ease infinite;
 }
 
+/* Light & Dark Theme */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,5 +30,91 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Blog Content Styling */
+
+.prose p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.prose li {
+  margin-top: 0.25rem;  /* Smaller Space Between Items */
+  margin-bottom: 0.25rem;
+}
+
+.prose h1 {
+  margin-bottom: 2.5rem;
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.prose h2 {
+  margin-bottom: 2rem;
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.prose h3 {
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.prose h4 {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.prose ul,
+.prose ol {
+  margin-top: 1.5rem;  /* Smaller Top */
+  margin-bottom: 1.5rem; /* Smaller Bottom */
+}
+
+.prose blockquote {
+  border-left: 4px solid #ef4444;
+  padding-left: 1rem;
+  color: var(--foreground);
+  opacity: 0.8;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.prose code {
+  background-color: #111;
+  color: #ededed;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+.prose img,
+.prose pre {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.prose hr {
+  display: none;
+}
+
+.prose a {
+  color: #ef4444;
+  text-decoration: underline;
+}
+
+.prose li::marker {
+  color: #ef4444;
 }
