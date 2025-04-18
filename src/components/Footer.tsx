@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import Link from 'next/link';
@@ -16,20 +17,20 @@ const Footer = () => {
     <footer className="bg-[var(--background)] border-t border-white/10 mt-28 px-6 py-16 text-center">
       <div className="max-w-6xl mx-auto space-y-12">
 
-        {/* Brand */}
+        {/* Brand Name */}
         <div className="text-2xl font-bold text-[var(--foreground)]">
           Salam Alta&apos;ey
         </div>
 
-        {/* Contact Info */}
+        {/* Contact Information */}
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
           <div className="flex flex-col items-center gap-2">
             <MapPin className="w-4 h-4" />
             <span>Iraq, Baghdad</span>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 text-center">
             <Building2 className="w-4 h-4" />
-            <span>6th Floor, Al-Masar Building, Sinaa'a Street, Baghdad, Iraq</span>
+            <span>6th Floor, Al-Masar Building<br />Sinaa&apos;a Street, Baghdad, Iraq</span>
           </div>
           <div className="flex flex-col items-center gap-2">
             <Phone className="w-4 h-4" />
@@ -48,10 +49,10 @@ const Footer = () => {
 
         {/* Quote */}
         <p className="italic text-muted-foreground text-sm max-w-xl mx-auto">
-          "Crafting digital experiences that resonate with purpose."
+          &ldquo;Crafting digital experiences that resonate with purpose.&rdquo;
         </p>
 
-        {/* Socials + CV */}
+        {/* Socials & CV */}
         <div className="flex flex-wrap justify-center gap-6 items-center">
           <Link
             href="https://github.com/TheOnlyySam"
@@ -79,7 +80,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-xs text-gray-400 dark:text-gray-500 pt-6 border-t border-white/10">
-          © {new Date().getFullYear()} Salam Alta'ey. All rights reserved.
+          © {new Date().getFullYear()} Salam Alta&apos;ey. All rights reserved.
         </div>
       </div>
     </footer>
