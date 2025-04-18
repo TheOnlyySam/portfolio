@@ -87,7 +87,3 @@ Tools that help:
 
 ### Agile != Scrum Only
 
-```ts
-const framework = (team) => {
-  return team.size > 8 ? 'Scrum' : 'Kanban';
-}

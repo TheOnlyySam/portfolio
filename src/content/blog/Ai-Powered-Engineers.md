@@ -101,7 +101,4 @@ If your engineers aren't using AI, you're not slower. You're vulnerable.
 
 ---
 
-```js
-const hire = (engineer) => {
-  return engineer.usesAI ? '10x Dev' : 'Outdated Dev';
-}
+

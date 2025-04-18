@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const posts = [
   {
-    slug: 'AI-Powered-Engineers',
+    slug: 'Ai-Powered-Engineers',
     title: 'AI-Powered Engineers Are the Future',
     description: 'Why AI-literate developers ship faster, debug smarter, and build better products.'
   },

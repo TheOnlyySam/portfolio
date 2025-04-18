@@ -96,7 +96,3 @@ Good tools:
 
 ### Horizontal Scaling vs Vertical Scaling
 
-```js
-const scale = (users) => {
-  return users > 1000 ? 'Microservices' : 'Monolith';
-}
