@@ -33,7 +33,7 @@ const Contact = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        href="mailto:salamaltaey.dev@gmail.com"
+        href="mailto:salamaltaey18@gmail.com"
         className="inline-block px-6 py-3 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition"
       >
         Get in Touch

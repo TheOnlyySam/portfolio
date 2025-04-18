@@ -33,7 +33,7 @@ const Work = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold mb-12 text-center text-[var(--foreground)] dark:text-white"
+        className="text-4xl font-bold mb-12 text-center text-[var(--foreground)]"
       >
         Selected Work
       </motion.h2>
@@ -47,7 +47,7 @@ const Work = () => {
             transition={{ delay: index * 0.2, duration: 0.6 }}
             className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 hover:border-red-500 transition duration-300"
           >
-            <h3 className="text-2xl font-semibold mb-2 text-[var(--foreground)] dark:text-white">
+            <h3 className="text-2xl font-semibold mb-2 text-[var(--foreground)]">
               {project.title}
             </h3>
 

@@ -32,7 +32,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         ← Back to Blog
       </Link>
 
-      <h1 className="text-5xl font-extrabold mb-4 leading-tight text-[var(--foreground)] dark:text-white">
+      <h1 className="text-5xl font-extrabold mb-4 leading-tight text-[var(--foreground)]">
         {data.title}
       </h1>
 
@@ -65,13 +65,13 @@ export default async function BlogPost({ params }: BlogPostProps) {
                    prose-img:my-8
                    prose-pre:my-8
                    prose-hr:hidden
-                   text-[var(--foreground)] dark:text-gray-300"
+                   text-[var(--foreground)]"
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       />
 
       {relatedPosts.length > 0 && (
         <section className="mt-24">
-          <h2 className="text-3xl font-semibold mb-6 text-[var(--foreground)] dark:text-white">
+          <h2 className="text-3xl font-semibold mb-6 text-[var(--foreground)]">
             Related Posts
           </h2>
 
@@ -82,7 +82,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
                 href={`/blog/${post.slug}`}
                 className="group border border-gray-300 dark:border-gray-700 rounded-lg p-5 hover:border-red-500 transition duration-300"
               >
-                <h3 className="text-lg font-medium mb-2 text-[var(--foreground)] dark:text-white group-hover:text-red-500 transition">
+                <h3 className="text-lg font-medium mb-2 text-[var(--foreground)] group-hover:text-red-500 transition">
                   {post.title}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-2">

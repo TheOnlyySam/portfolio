@@ -3,22 +3,17 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-const posts = [  // Dummy Data — Replace with your API or props
+const posts = [
   {
-    slug: 'first-post',
+    slug: 'Agile-Methodology',
+    title: 'Mastering Agile Methodology',
+    description: 'Insights from real-world product and engineering teams.'
+  },
+  {
+    slug: 'Building-Scalable-Systems',
     title: 'Building Scalable Systems',
     description: 'Lessons learned from backend, DevOps, and infrastructure projects.'
   },
-  {
-    slug: 'devops-best-practices',
-    title: 'DevOps Best Practices',
-    description: 'CI/CD, infrastructure automation and deployment strategies.'
-  },
-  {
-    slug: 'modern-ui-ux-design',
-    title: 'Modern UI/UX Design',
-    description: 'Crafting beautiful and functional user experiences.'
-  }
 ]
 
 const Hero = () => {
@@ -31,7 +26,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="text-[var(--foreground)] dark:text-white text-4xl md:text-7xl font-bold tracking-tight leading-tight"
+            className="text-[var(--foreground)] text-4xl md:text-7xl font-bold tracking-tight leading-tight"
           >
             I Build Modern{' '}
             <span className="bg-gradient-to-r from-red-500 to-pink-500 text-transparent bg-clip-text">
@@ -71,15 +66,15 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold mb-12 text-[var(--foreground)] dark:text-white"
+          className="text-4xl font-bold mb-12 text-[var(--foreground)]"
         >
           Latest Blog Posts
         </motion.h2>
 
-        <div className="grid gap-8">
+        <div className="grid gap-8 mb-8">
           {posts.length > 0 ? posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="border border-gray-300 dark:border-gray-700 rounded-lg p-6 hover:border-red-500 transition duration-300 text-left block">
-              <h3 className="text-2xl font-semibold mb-2 text-[var(--foreground)] dark:text-white">
+              <h3 className="text-2xl font-semibold mb-2 text-[var(--foreground)]">
                 {post.title}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
@@ -90,6 +85,14 @@ const Hero = () => {
             <div className="text-gray-500">No posts yet.</div>
           )}
         </div>
+
+        {/* ✅ View All Blogs Button */}
+        <Link
+          href="/blog"
+          className="inline-block mt-4 px-6 py-3 text-sm font-medium rounded-lg border border-gray-300 dark:border-gray-700 text-[var(--foreground)] dark:text-white hover:border-red-500 transition"
+        >
+          Check More Blogs →
+        </Link>
       </section>
     </>
   )

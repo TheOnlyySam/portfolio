@@ -18,7 +18,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold mb-12 text-[var(--foreground)] dark:text-white"
+        className="text-4xl font-bold mb-12 text-[var(--foreground)]"
       >
         Skills & Technologies
       </motion.h2>
@@ -34,7 +34,7 @@ const Skills = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.03, duration: 0.4 }}
-            className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg text-sm text-[var(--foreground)] dark:text-white hover:border-red-500 transition duration-300"
+            className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg text-sm text-[var(--foreground)] hover:border-red-500 transition duration-300"
           >
             {skill}
           </motion.span>

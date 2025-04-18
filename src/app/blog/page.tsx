@@ -17,7 +17,7 @@ export default function BlogPage() {
             className="group border border-gray-300 dark:border-gray-700 rounded-xl p-6 hover:border-red-500 transition duration-300 flex flex-col justify-between"
           >
             <div>
-              <h2 className="text-xl font-semibold mb-2 text-[var(--foreground)] dark:text-white group-hover:text-red-500 transition">
+              <h2 className="text-xl font-semibold mb-2 text-[var(--foreground)] group-hover:text-red-500 transition">
                 {post.title}
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3">
