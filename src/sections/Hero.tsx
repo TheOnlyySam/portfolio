@@ -5,6 +5,11 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'UIUX-is-better-simple',
+    title: 'Simple UI/UX Wins — Every Time',
+    description: 'Why designing simpler interfaces beats fancy ones — and how simplicity drives growth, loyalty, and better products.'
+  },
+  {
     slug: 'Ai-Powered-Engineers',
     title: 'AI-Powered Engineers Are the Future',
     description: 'Why AI-literate developers ship faster, debug smarter, and build better products.'
@@ -13,11 +18,6 @@ const posts = [
     slug: 'Agile-Methodology',
     title: 'Mastering Agile Methodology',
     description: 'Insights from real-world product and engineering teams.'
-  },
-  {
-    slug: 'Building-Scalable-Systems',
-    title: 'Building Scalable Systems',
-    description: 'Lessons learned from backend, DevOps, and infrastructure projects.'
   },
 ]
 
