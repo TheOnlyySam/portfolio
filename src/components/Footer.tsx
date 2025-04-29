@@ -30,7 +30,11 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-center gap-2 text-center">
             <Building2 className="w-4 h-4" />
-            <span>6th Floor, Al-Masar Building<br />Sinaa&apos;a Street, Baghdad, Iraq</span>
+            <span>
+              6th Floor, Al-Masar Building
+              <br />
+              Sinaa&apos;a Street, Baghdad, Iraq
+            </span>
           </div>
           <div className="flex flex-col items-center gap-2">
             <Phone className="w-4 h-4" />
@@ -68,14 +72,16 @@ const Footer = () => {
           >
             <Linkedin className="w-5 h-5" />
           </Link>
-          <Link
+
+          {/* ← THIS is the only CV link: */}
+          <a
             href="/Salam-Altaey-CV.pdf"
             download
             className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm rounded-lg hover:border-red-500 transition"
           >
             <FileDown className="w-4 h-4" />
             Download CV
-          </Link>
+          </a>
         </div>
 
         {/* Copyright */}
