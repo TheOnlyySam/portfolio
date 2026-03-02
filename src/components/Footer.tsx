@@ -1,10 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 import Link from 'next/link';
 import {
-  Github,
-  Linkedin,
   FileDown,
   MapPin,
   Mail,
@@ -14,21 +11,21 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--background)] border-t border-white/10 mt-28 px-6 py-16 text-center">
-      <div className="max-w-6xl mx-auto space-y-12">
+    <footer className="mt-28 px-6 pb-10">
+      <div className="max-w-6xl mx-auto rounded-[2rem] border border-black/8 bg-white/70 px-6 py-12 text-center shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl dark:border-white/10 dark:bg-white/5 md:px-10">
 
         {/* Brand Name */}
-        <div className="text-2xl font-bold text-[var(--foreground)]">
+        <div className="text-2xl font-semibold tracking-[-0.03em] text-[var(--foreground)]">
           Salam Alta&apos;ey
         </div>
 
         {/* Contact Information */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          <div className="flex flex-col items-center gap-2">
+        <div className="mt-10 grid gap-6 text-sm text-[var(--foreground)]/70 sm:grid-cols-2 md:grid-cols-4">
+          <div className="flex flex-col items-center gap-2 rounded-3xl border border-black/8 bg-white/80 px-4 py-5 dark:border-white/10 dark:bg-white/5">
             <MapPin className="w-4 h-4" />
             <span>Iraq, Baghdad</span>
           </div>
-          <div className="flex flex-col items-center gap-2 text-center">
+          <div className="flex flex-col items-center gap-2 rounded-3xl border border-black/8 bg-white/80 px-4 py-5 text-center dark:border-white/10 dark:bg-white/5">
             <Building2 className="w-4 h-4" />
             <span>
               6th Floor, Al-Masar Building
@@ -36,15 +33,15 @@ const Footer = () => {
               Sinaa&apos;a Street, Baghdad, Iraq
             </span>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 rounded-3xl border border-black/8 bg-white/80 px-4 py-5 dark:border-white/10 dark:bg-white/5">
             <Phone className="w-4 h-4" />
             <span>+964 773 557 5528</span>
           </div>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 rounded-3xl border border-black/8 bg-white/80 px-4 py-5 dark:border-white/10 dark:bg-white/5">
             <Mail className="w-4 h-4" />
             <Link
               href="mailto:salamaltaey18@gmail.com"
-              className="hover:text-red-500 transition"
+              className="hover:text-[var(--accent)] transition"
             >
               salamaltaey18@gmail.com
             </Link>
@@ -52,32 +49,16 @@ const Footer = () => {
         </div>
 
         {/* Quote */}
-        <p className="italic text-muted-foreground text-sm max-w-xl mx-auto">
+        <p className="mt-8 max-w-xl mx-auto text-sm italic text-[var(--foreground)]/60">
           &ldquo;Crafting digital experiences that resonate with purpose.&rdquo;
         </p>
 
-        {/* Socials & CV */}
-        <div className="flex flex-wrap justify-center gap-6 items-center">
-          <Link
-            href="https://github.com/TheOnlyySam"
-            target="_blank"
-            className="text-gray-500 dark:text-gray-400 hover:text-red-500 transition"
-          >
-            <Github className="w-5 h-5" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/salam-alta-ey-06216831a/"
-            target="_blank"
-            className="text-gray-500 dark:text-gray-400 hover:text-red-500 transition"
-          >
-            <Linkedin className="w-5 h-5" />
-          </Link>
-
-          {/* ← THIS is the only CV link: */}
+        {/* CV */}
+        <div className="mt-8 flex justify-center">
           <a
             href="/Salam-Altaey-CV.pdf"
             download
-            className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm rounded-lg hover:border-red-500 transition"
+            className="inline-flex items-center gap-2 rounded-2xl border border-black/10 bg-white px-5 py-3 text-sm font-medium text-[var(--foreground)] shadow-sm transition hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)] dark:border-white/10 dark:bg-white/5"
           >
             <FileDown className="w-4 h-4" />
             Download CV
@@ -85,7 +66,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="text-xs text-gray-400 dark:text-gray-500 pt-6 border-t border-white/10">
+        <div className="mt-10 border-t border-black/8 pt-6 text-xs text-[var(--foreground)]/45 dark:border-white/10">
           © {new Date().getFullYear()} Salam Alta&apos;ey. All rights reserved.
         </div>
       </div>

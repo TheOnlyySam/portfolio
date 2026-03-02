@@ -13,17 +13,18 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-28 max-w-6xl mx-auto px-6 text-center">
+    <section id="skills" className="mx-auto max-w-6xl px-6 py-28 text-center">
+      <div className="rounded-[2rem] border border-black/8 bg-white/70 px-6 py-12 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl dark:border-white/10 dark:bg-white/5 md:px-10">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold mb-12 text-[var(--foreground)]"
+        className="text-4xl font-semibold tracking-[-0.04em] text-[var(--foreground)]"
       >
         Skills & Technologies
       </motion.h2>
 
-      <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12 text-sm md:text-base">
+      <p className="mx-auto mb-12 mt-4 max-w-2xl text-sm text-[var(--foreground)]/65 md:text-base">
         Technologies, tools, and practices I’ve used to build scalable products, lead development teams, and deliver high-end software solutions.
       </p>
 
@@ -34,11 +35,12 @@ const Skills = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.03, duration: 0.4 }}
-            className="px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg text-sm text-[var(--foreground)] hover:border-red-500 transition duration-300"
+            className="rounded-full border border-black/8 bg-white/80 px-4 py-2 text-sm text-[var(--foreground)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] dark:border-white/10 dark:bg-white/5"
           >
             {skill}
           </motion.span>
         ))}
+      </div>
       </div>
     </section>
   )

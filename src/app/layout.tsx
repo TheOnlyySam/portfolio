@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ProgressBar from '@/components/ProgressBar'
 import '@/app/globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Salam Alta'ey | Portfolio",
@@ -19,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} relative min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300`}>
+      <body className="relative min-h-screen bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300">
         <Navbar />
         <ProgressBar/>
         <main className="pt-20">
